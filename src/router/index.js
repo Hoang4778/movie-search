@@ -1,27 +1,49 @@
-import { createRouter, createWebHashHistory } from 'vue-router'
-import HomeView from '../views/HomeView.vue'
+import { createRouter, createWebHashHistory } from "vue-router";
+import Home from "../views/Home.vue";
+import Top250Movies from "../views/Top250Movies.vue";
+import Top250TVs from "../views/Top250TVs.vue";
+import BoxOffice from "../views/BoxOffice.vue";
+import SearchPage from "../views/SearchPage.vue";
+import InfoPage from "../views/InfoPage.vue";
 
 const routes = [
-  {
-    path: '/',
-    name: 'home',
-    component: HomeView
-  },
-  {
-    path: '/about',
-    name: 'about',
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: function () {
-      return import(/* webpackChunkName: "about" */ '../views/AboutView.vue')
-    }
-  }
-]
+	{
+		path: "/",
+		name: "home",
+		component: Home,
+	},
+	{
+		path: "/top250movies",
+		name: "top250movies",
+		component: Top250Movies,
+	},
+	{
+		path: "/top250tvs",
+		name: "top250tvs",
+		component: Top250TVs,
+	},
+	{
+		path: "/boxoffice",
+		name: "boxoffice",
+		component: BoxOffice,
+	},
+	{
+		path: "/search/:keyword",
+		name: "search",
+		component: SearchPage,
+		props: true,
+	},
+	{
+		path: "/info/:type",
+		name: "info",
+		component: InfoPage,
+		props: true,
+	},
+];
 
 const router = createRouter({
-  history: createWebHashHistory(),
-  routes
-})
+	history: createWebHashHistory(),
+	routes,
+});
 
-export default router
+export default router;
