@@ -3,13 +3,14 @@
 ## Description
 
 This project comes from my orginal idea of making a trivial website like IMdb since I love watching movies. In this project, I mainly used VueJS as a scalfolding tool for building SPAs. The theme, color and font bring the classics to the page but also give users refreshment due to new contents update very often.
-**Note: This webpage is just a demo and for desktop only**
+
+**Note: This webpage is just a demo and for desktop only**.
 
 ## Project setup
 ```
 npm install
 ```
-**Note: For those who have not install NodeJS, here is the [link](https://nodejs.org/en/) to check out**
+**Note: For those who have not install NodeJS, here is the [link](https://nodejs.org/en/) to check out**.
 
 ### Compiles and hot-reloads for development
 ```
@@ -23,7 +24,7 @@ npm run build
 
 ## Functionalities of this site
 
-1. Users can choose to view latest movies and TV shows on the homepage and detail pages
+1. Users can choose to view latest movies and TV shows on the homepage and detail pages.
 2. The site allows searching based on names, keywords, genres.
 
 ## What I learned
